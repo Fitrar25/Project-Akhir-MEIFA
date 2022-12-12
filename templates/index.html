@@ -23,6 +23,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#program">Gunakan Program</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">|</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#MEIFA">About Our Team</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,7 +80,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="../static/img/fmipa.jpg" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="../static/img/lab.jpg" alt="..." /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
@@ -152,7 +154,7 @@
             </div>
         </section>
         <br>
-        <center><p class="display-6">Program Recommender System</p></center>
+        <p class="display-6 text-center">Program Recommender System</p>
         <div class="container-fluid my-5" id="program">
             <div class="mx-5">
               <div class="row gx-5">
@@ -279,14 +281,17 @@
                     </select>
         
                     <div class="d-flex justify-content-end mt-5">
-                      <button type="submit" class="btn btn-success">Prediksi</button>
+                      <button type="submit" class="btn btn-primary">Prediksi</button>
                     </div>
                   </form>
                 </div>
-                <div class="col-4 pt-5 px-2 card gx-3" style="background-color: #E2F6FF;">
+                <div class="col-4 pt-5 px-2 card gx-3" style="background-color: #c8ced0;">
                     <h3 class="text-center">Rekomendasi Jurusan yang sesuai</h2>
                       {% if hasil %}
+                      <br>
                       <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span></p>
+                      <br>
+                      <p class="text-center">Terima Kasih Sudah Menggunakan Program Kami</p>
                       {% endif %}
                   </div>
               </div>
@@ -296,7 +301,7 @@
 
     <div class="container">
     <div class="row text-center">
-        <p class="display-6">Salam Kami Kelompok 3 (MEIFA)</p>
+        <p class="display-6" id="MEIFA">Salam Kami Kelompok 3 (MEIFA)</p>
         
         <div class="col-xl-4 col-sm-6 mb-5">
             <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/img/Armando2.jpg" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -337,7 +342,7 @@
         
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/img/Mila.jpg" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Mila Delvana</h5><span class="small text-uppercase text-muted">Model Evaluation</span>>
+                <h5 class="mb-0">Mila Delvana</h5><span class="small text-uppercase text-muted">Model Evaluation</span>
                 </ul>
             </div>
         </div>
