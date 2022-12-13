@@ -12,4 +12,4 @@ def Prediksi(data):
     pred = Prediction
     rec_str = pred.item()[:]
     return rec_str
-    
+

@@ -22,20 +22,22 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#program">Gunakan Program</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gunakan Program</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">|</a></li>
                         <li class="nav-item"><a class="nav-link" href="#MEIFA">About Our Team</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Header-->
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">Recommendation System Program Studi</h1>
                     <h2 class="masthead-subheading mb-0">By MEIFA</h2>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#program">Gunakan Program</a>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gunakan Program</a>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hasil Rekomendasi</a>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -43,6 +45,11 @@
             <div class="bg-circle-3 bg-circle"></div>
             <div class="bg-circle-4 bg-circle"></div>
         </header>
+        <button type="button" class="btn btn-primary btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <br><br><br>
+        <h2 class="display-4 text-center">Informasi Singkat</h2>
         <!-- Content section 1-->
         <section id="scroll">
             <div class="container px-5">
@@ -52,8 +59,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan SOSHUM</h2>
-                            <p>Sosial humaniora atau Soshum merupakan  jurusan yang cukup banyak peminatnya. Banyak juga anak-anak yang mengambil jurusan IPA/MIPA saat di SMA kemudian beralih kejurusan Kuliah IPS.</p>
+                            <h2 class="display-5">Jurusan SOSHUM</h2>
+                            <p align="justify" class="fs-5">Sosial humaniora atau Soshum merupakan  jurusan yang cukup banyak peminatnya.Jurusan Ilmu Pengetahuan Sosial kita tahu termasuk pada rumpun Sosial dan Humaniora pada saat mengikuti seleksi masuk perguruan tinggi, yang mana siswa hanya dapat memilih jurusan kuliah dengan latar belakang mata pelajaran IPS. Banyak juga anak-anak yang mengambil jurusan IPA/MIPA saat di SMA kemudian beralih kejurusan Kuliah IPS.</p>
                         </div>
                     </div>
                 </div>
@@ -68,8 +75,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan Ilmu Pendidikan</h2>
-                            <p>Jurusan Ilmu pendidikan dan pelatihan tentunya cocok banget buat kamu yang mempunyai cita-cita untuk mengajar atau mendidik generasi penerus bangsa. Jurusan yang berada dalam fakultas pendidikan dan keguruan adalah jawabanya.</p>
+                            <h2 class="display-5">Jurusan Ilmu Pendidikan</h2>
+                            <p align="justify" class="fs-5">Jurusan Ilmu pendidikan dan pelatihan tentunya cocok banget buat kamu yang mempunyai cita-cita untuk mengajar atau mendidik generasi penerus bangsa. Jurusan yang berada dalam fakultas pendidikan dan keguruan adalah jawabanya. Selain belajar tentang bidang studi pendidikan, mahasiswa juga akan belajar tentang proses transfer ilmu yang efektif kepada murid, cara tepat untuk mengajar, cara mengelola kelas, cara mengembangkan program pembelajaran, dan sebagainya.</p>
                         </div>
                     </div>
                 </div>
@@ -84,8 +91,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Ilmu Pengetahuan Alam dan Matematika (MIPA)</h2>
-                            <p>Bidang ilmu pengetahuan alam dan matematika merupakan sebuah bidang ilmu yang mempelajari tanda-tanda dan fenomena di alam semesta. Kamu akan belajar ilmu Matematika dan Sains di jurusan ini.</p>
+                            <h2 class="display-5">Ilmu Pengetahuan Alam dan Matematika (MIPA)</h2>
+                            <p align="justify" class="fs-5"> MIPA adalah salah satu fakultas di perguruan tinggi yang mempelajari mengenai ilmu pasti dan ilmu alam. Menjadi mahasiswa di fakultas ini sangat menyenangkan, apalagi mereka yang menyukai ilmu alam menjadi wadah untuk mengembangkan passion yang dimiliki. Bidang ilmu pengetahuan alam dan matematika merupakan sebuah bidang ilmu yang mempelajari tanda-tanda dan fenomena di alam semesta. Kamu akan belajar ilmu Matematika dan Sains di jurusan ini.</p>
                         </div>
                     </div>
                 </div>
@@ -99,8 +106,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan Komputer atau Informatika</h2>
-                            <p>Bagi kamu yang tertarik dengan komputer cocok banget masuk jurusan ini, kamu akan belajar berbagai hal tentang komputer dan hasil terkait lainnya. Dalam jurusan informatika ini hal yang biasa di pelajari biasanya seputar dengan pembuatan aplikasi, pengembangan aplikasi, jaringan komputer, database, penerapan sistem komputer,dll.</p>
+                            <h2 class="display-5">Jurusan Komputer atau Informatika</h2>
+                            <p align="justify" class="fs-5">Bagi kamu yang tertarik dengan komputer cocok banget masuk jurusan ini, kamu akan belajar berbagai hal tentang komputer dan hasil terkait lainnya. Dalam jurusan informatika ini hal yang biasa di pelajari biasanya seputar dengan pembuatan aplikasi, pengembangan aplikasi, jaringan komputer, database, penerapan sistem komputer,dll.</p>
                         </div>
                     </div>
                 </div>
@@ -114,8 +121,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan Kedokteran dan Kesehatan</h2>
-                            <p>Jurusana Ilmu Kedokteran dan Kesehatan ini sangat cocok bagi kalian yang suka dalam bidang kesehatan. Biasanya orang yang belajar  ilmu kedokteran adalah orang-orang yang pekerja keras dan teliti. Mengapa demikian? Karena pekerjaan yang akan dilakukan akan berkaitan dengan nyawa sesorang. Jurusan Kedokteran dan Kesehatan ini cukup banyak di minati oleh banyak orang. Kebanyakan orang yang pernah belajar dalam bidang keilmuan ini menyatakan bahwa ketika berkuliah membutuhkan kemampuan menghafal dan mengingat  yang baik, serta tidak memiliki rasa takut dan jiji.</p>
+                            <h2 class="display-5">Jurusan Kedokteran dan Kesehatan</h2>
+                            <p align="justify" class="fs-5">Jurusana Ilmu Kedokteran dan Kesehatan ini sangat cocok bagi kalian yang suka dalam bidang kesehatan. Biasanya orang yang belajar  ilmu kedokteran adalah orang-orang yang pekerja keras dan teliti. Mengapa demikian? Karena pekerjaan yang akan dilakukan akan berkaitan dengan nyawa sesorang. Jurusan Kedokteran dan Kesehatan ini cukup banyak di minati oleh banyak orang. Kebanyakan orang yang pernah belajar dalam bidang keilmuan ini menyatakan bahwa ketika berkuliah membutuhkan kemampuan menghafal dan mengingat  yang baik, serta tidak memiliki rasa takut dan jiji.</p>
                         </div>
                     </div>
                 </div>
@@ -130,8 +137,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan Hukum</h2>
-                            <p>Jurusan Hukum merupakan jurusan yang termasuk fakultas yang di gemari nyaris setiap kampus di Indonesia sama halnya dengan Jurusan Kedokteran dan Kesehatan. Untuk jurusan hukum mengapa banyak di minati oleh banyak orang di setiap fakultas di Indonesia? Karena kebanyakan perusahaan maupun organisasi membuthkan sebagaian besar lulusan fakultas ini.</p>
+                            <h2 class="display-5">Jurusan Hukum</h2>
+                            <p align="justify" class="fs-5">Jurusan Hukum merupakan jurusan yang termasuk fakultas yang di gemari nyaris setiap kampus di Indonesia sama halnya dengan Jurusan Kedokteran dan Kesehatan. Untuk jurusan hukum mengapa banyak di minati oleh banyak orang di setiap fakultas di Indonesia? Karena kebanyakan perusahaan maupun organisasi membuthkan sebagaian besar lulusan fakultas ini.</p>
                         </div>
                     </div>
                 </div>
@@ -146,162 +153,187 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Jurusan Seni dan Desain</h2>
-                            <p>Untuk kamu yang hobi dengan seni cocok banget memilih jurusan seni dan desain. Hidup kamu akan benar-benar berwarna jika kamu bergabung dalam fakultas kesenian. Mengapa demikian? Karena ketika kalian memilih jurusan seni dan desain setiap aktifitas perkuliahan seni dan desain kamu akan dipaksi untuk mengeluarkan segala daya kreatifitas kamu. Diawali dengan berimajinasi, berkreasi dan mengaktualisasikan dengan bentuk berbagai aktifitas seperti drama, menari, melukis dan sebagainya.</p>
+                            <h2 class="display-5">Jurusan Seni dan Desain</h2>
+                            <p align="justify" class="fs-5">Untuk kamu yang hobi dengan seni cocok banget memilih jurusan seni dan desain. Hidup kamu akan benar-benar berwarna jika kamu bergabung dalam fakultas kesenian. Mengapa demikian? Karena ketika kalian memilih jurusan seni dan desain setiap aktifitas perkuliahan seni dan desain kamu akan dipaksi untuk mengeluarkan segala daya kreatifitas kamu. Diawali dengan berimajinasi, berkreasi dan mengaktualisasikan dengan bentuk berbagai aktifitas seperti drama, menari, melukis dan sebagainya.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <br>
-        <p class="display-6 text-center">Program Recommender System</p>
-        <div class="container-fluid my-5" id="program">
-            <div class="mx-5">
-              <div class="row gx-5">
-                <div class="p-5 col-8 card" style="background-color: #e9e8e8;">
-                    <H2 class="text-center">Silahkan Isi Form</H1>
-                        <br>
-                  <form action="/predict#program" method="post">
-
-                    <label for="MTK_IPA">Nilai Matematika Anda</label>
-                    <select class="form-select mb-3" name="MTK_IPA" id="MTK_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-
-                    <label for="Indo_IPA">Nilai Bahasa Indonesia Anda</label>
-                    <select class="form-select mb-3" name="Indo_IPA" id="Indo_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-
-                    <label for="Eng_IPA">Nilai Bahasa Inggris Anda</label>
-                    <select class="form-select mb-3" name="Eng_IPA" id="Eng_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-        
-                    <label for="Biologi_IPA">Nilai Biologi Anda</label>
-                    <select class="form-select mb-3" name="Biologi_IPA" id="Biologi_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-        
-                    <label for="Kimia_IPA">Nilai Kimia Anda</label>
-                    <select class="form-select mb-3" name="Kimia_IPA" id="Kimia_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-
-                    <label for="Fisika_IPA">Nilai Fisika Anda</label>
-                    <select class="form-select mb-3" name="Fisika_IPA" id="Fisika_IPA" required>
-                      <option value="" selected disabled>Nilai dibulatkan saja</option>
-                      <option value="1">100</option>
-                      <option value="2">90</option>
-                      <option value="0">80</option>
-                      <option value="3">70</option>
-                      <option value="4">60</option>
-                      <option value="5">Kecil dari 50</option>
-                    </select>
-
-                    <label for="MataPelajaranDisukai_IPA">Mata Pelajaran Anda</label>
-                    <select class="form-select mb-3" name="MataPelajaranDisukai_IPA" id="MataPelajaranDisukai_IPA" required>
-                      <option value="" selected disabled>Pilih salah satu</option>
-                      <option value="0">Matematika</option>
-                      <option value="1">Bahasa Indonesia</option>
-                      <option value="2">Bahasa Inggris</option>
-                      <option value="3">Biologi</option>
-                      <option value="0">Fisika</option>
-                      <option value="1">Kimia</option>
-                      <option value="1">Lainnya</option>
-                    </select>
-
-                    <label for="Hobi_IPA">Hobi Anda</label>
-                    <select class="form-select mb-3" name="Hobi_IPA" id="Hobi_IPA" required>
-                      <option value="" selected disabled>Pilih salah satu</option>
-                      <option value="0">Gaming</option>
-                      <option value="1">Bernyanyi</option>
-                      <option value="2">Membaca</option>
-                      <option value="3">Olahraga</option>
-                      <option value="0">Seni</option>
-                      <option value="1">Memasak</option>
-                      <option value="2">Menari</option>
-                      <option value="3">Travelling</option>
-                      <option value="2">Lainnya</option>
-                    </select>
-
-                    <label for="Skill_IPA">Skill Anda</label>
-                    <select class="form-select mb-3" name="Skill_IPA" id="Skill_IPA" required>
-                      <option value="" selected disabled>Pilih salah satu</option>
-                      <option value="0">Bahasa Pemograman</option>
-                      <option value="1">Public Speaking</option>
-                      <option value="2">Keahlian Akuntansi</option>
-                      <option value="3">Kemampuan Marketing</option>
-                      <option value="0">Operasi Mesin</option>
-                      <option value="0">Desain Grafis</option>
-                      <option value="0">Microsoft Office</option>
-                      <option value="1">Lainnya</option>
-                    </select>
-
-                    <label for="Cita2_IPA">Cita - Cita Anda</label>
-                    <select class="form-select mb-3" name="Cita2_IPA" id="Cita2_IPA" required>
-                      <option value="" selected disabled>Pilih salah satu</option>
-                      <option value="0">Programmer</option>
-                      <option value="1">Hakim</option>
-                      <option value="2">Guru</option>
-                      <option value="3">Dokter</option>
-                      <option value="0">Desainer</option>
-                      <option value="0">Arsitek</option>
-                      <option value="2">Lainnya</option>
-                    </select>
-        
-                    <div class="d-flex justify-content-end mt-5">
-                      <button type="submit" class="btn btn-primary">Prediksi</button>
-                    </div>
-                  </form>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Program Recommender System</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-4 pt-5 px-2 card gx-3" style="background-color: #c8ced0;">
-                    <h3 class="text-center">Rekomendasi Jurusan yang sesuai</h2>
-                      {% if hasil %}
-                      <br>
-                      <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span></p>
-                      <br>
-                      <p class="text-center">Terima Kasih Sudah Menggunakan Program Kami</p>
-                      {% endif %}
-                  </div>
+                <div class="modal-body">
+                    <form action="/predict" method="post">
+                        <div class="row gx-5">
+                        <div class="col-auto">
+                        <label for="MTK_IPA">Nilai Matematika Anda</label>
+                        <select class="form-select mb-3" name="MTK_IPA" id="MTK_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+    
+                        <label for="Indo_IPA">Nilai Bahasa Indonesia Anda</label>
+                        <select class="form-select mb-3" name="Indo_IPA" id="Indo_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+    
+                        <label for="Eng_IPA">Nilai Bahasa Inggris Anda</label>
+                        <select class="form-select mb-3" name="Eng_IPA" id="Eng_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+            
+                        <label for="Biologi_IPA">Nilai Biologi Anda</label>
+                        <select class="form-select mb-3" name="Biologi_IPA" id="Biologi_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+            
+                        <label for="Kimia_IPA">Nilai Kimia Anda</label>
+                        <select class="form-select mb-3" name="Kimia_IPA" id="Kimia_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+                        </div>
+    
+                    <div class="col-auto">
+                        <label for="Fisika_IPA">Nilai Fisika Anda</label>
+                        <select class="form-select mb-3" name="Fisika_IPA" id="Fisika_IPA" required>
+                          <option value="" selected disabled>Nilai dibulatkan saja</option>
+                          <option value="1">100</option>
+                          <option value="2">90</option>
+                          <option value="0">80</option>
+                          <option value="3">70</option>
+                          <option value="4">60</option>
+                          <option value="5">Kecil dari 50</option>
+                        </select>
+    
+                        <label for="MataPelajaranDisukai_IPA">Mata Pelajaran Anda</label>
+                        <select class="form-select mb-3" name="MataPelajaranDisukai_IPA" id="MataPelajaranDisukai_IPA" required>
+                          <option value="" selected disabled>Pilih salah satu</option>
+                          <option value="0">Matematika</option>
+                          <option value="1">Bahasa Indonesia</option>
+                          <option value="2">Bahasa Inggris</option>
+                          <option value="3">Biologi</option>
+                          <option value="0">Fisika</option>
+                          <option value="1">Kimia</option>
+                          <option value="1">Lainnya</option>
+                        </select>
+    
+                        <label for="Hobi_IPA">Hobi Anda</label>
+                        <select class="form-select mb-3" name="Hobi_IPA" id="Hobi_IPA" required>
+                          <option value="" selected disabled>Pilih salah satu</option>
+                          <option value="0">Gaming</option>
+                          <option value="1">Bernyanyi</option>
+                          <option value="2">Membaca</option>
+                          <option value="3">Olahraga</option>
+                          <option value="0">Seni</option>
+                          <option value="1">Memasak</option>
+                          <option value="2">Menari</option>
+                          <option value="3">Travelling</option>
+                          <option value="2">Lainnya</option>
+                        </select>
+    
+                        <label for="Skill_IPA">Skill Anda</label>
+                        <select class="form-select mb-3" name="Skill_IPA" id="Skill_IPA" required>
+                          <option value="" selected disabled>Pilih salah satu</option>
+                          <option value="0">Bahasa Pemograman</option>
+                          <option value="1">Public Speaking</option>
+                          <option value="2">Keahlian Akuntansi</option>
+                          <option value="3">Kemampuan Marketing</option>
+                          <option value="0">Operasi Mesin</option>
+                          <option value="0">Desain Grafis</option>
+                          <option value="0">Microsoft Office</option>
+                          <option value="1">Lainnya</option>
+                        </select>
+    
+                        <label for="Cita2_IPA">Cita - Cita Anda</label>
+                        <select class="form-select mb-3" name="Cita2_IPA" id="Cita2_IPA" required>
+                          <option value="" selected disabled>Pilih salah satu</option>
+                          <option value="0">Programmer</option>
+                          <option value="1">Hakim</option>
+                          <option value="2">Guru</option>
+                          <option value="3">Dokter</option>
+                          <option value="0">Desainer</option>
+                          <option value="0">Arsitek</option>
+                          <option value="2">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-end mt-5">
+                  <button type="submit" class="btn btn-primary">Prediksi</button>
+                </div>
+              </form>
+                </div>
               </div>
             </div>
-        </div>
+          </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Hasil Rekomendasi</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h3 class="text-center">Rekomendasi Jurusan yang sesuai</h2>
+                          {% if hasil %}
+                          <br>
+                          <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span></p>
+                          <br>
+                          <p class="text-center">Terima Kasih Sudah Menggunakan Program Kami</p>
+                          {% else %}
+                          <p class="text_center">Silahkan Gunakan Program Terlebih Dahulu</p>
+                          {% endif %}
+                          
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gunakan Kembali</button>
+                </div>
+              </div>
+            </div>
+          </div>
               <br><br><br>
 
     <div class="container">
     <div class="row text-center">
-        <p class="display-6" id="MEIFA">Salam Kami Kelompok 3 (MEIFA)</p>
+        <h1 class="display-6" id="MEIFA">Salam Kami Kelompok 3 (MEIFA)</h1>
         
         <div class="col-xl-4 col-sm-6 mb-5">
             <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/img/Armando2.jpg" alt="" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
