@@ -1,6 +1,5 @@
-import sklearn
 from flask import Flask, render_template, request
-from model import load, Prediksi
+from model import load, Prediksi, detail
 
 app = Flask(__name__)
 
@@ -29,7 +28,8 @@ def predict():
     # melakukan prediksi menggunakan model yang telah dibuat
     data = [[MTK_IPA,Indo_IPA,Eng_IPA,Biologi_IPA,Kimia_IPA,Fisika_IPA,MataPelajaranDisukai_IPA,Hobi_IPA,Skill_IPA,Cita2_IPA]]
     hasil = Prediksi(data)
-    return render_template('index.html', hasil=hasil)
+    hasil2 = detail(data)
+    return render_template('index.html', hasil=hasil, detil = hasil2 )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

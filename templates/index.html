@@ -294,7 +294,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <div class="d-flex justify-content-end mt-5">
+                <div class="d-flex justify-content-end">
                   <button type="submit" class="btn btn-primary">Prediksi</button>
                 </div>
               </form>
@@ -314,11 +314,11 @@
                         <h3 class="text-center">Rekomendasi Jurusan yang sesuai</h2>
                           {% if hasil %}
                           <br>
-                          <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span></p>
+                          <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span> <br><br> Berikut Porgram Studinya : <br> <span class="fw_bold">{{detil}}</span></p>
                           <br>
                           <p class="text-center">Terima Kasih Sudah Menggunakan Program Kami</p>
                           {% else %}
-                          <p class="text_center">Silahkan Gunakan Program Terlebih Dahulu</p>
+                          <p style="padding-left: 75px;">Silahkan Gunakan Program Terlebih Dahulu!!</p>
                           {% endif %}
                           
                       </div>
