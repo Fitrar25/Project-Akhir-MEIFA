@@ -7,7 +7,6 @@
         <meta name="author" content="" />
         <link rel="shortcut icon" href="../static/img/logo.png.jpg">
         <title>Recommendation System - MEIFA</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
@@ -23,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Gunakan Program</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">|</a></li>
+                        <li class="nav-item"><a class="nav-link">|</a></li>
                         <li class="nav-item"><a class="nav-link" href="#MEIFA">About Our Team</a></li>
                     </ul>
                 </div>
@@ -172,7 +171,7 @@
                     <form action="/predict" method="post">
                         <div class="row gx-5">
                         <div class="col-auto">
-                        <label for="MTK_IPA">Nilai Matematika Anda</label>
+                        <label class="fw-bold" for="MTK_IPA">Nilai Matematika Anda</label>
                         <select class="form-select mb-3" name="MTK_IPA" id="MTK_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -183,7 +182,7 @@
                           <option value="5">Kecil dari 50</option>
                         </select>
     
-                        <label for="Indo_IPA">Nilai Bahasa Indonesia Anda</label>
+                        <label class="fw-bold" for="Indo_IPA">Nilai Bahasa Indonesia Anda</label>
                         <select class="form-select mb-3" name="Indo_IPA" id="Indo_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -194,7 +193,7 @@
                           <option value="5">Kecil dari 50</option>
                         </select>
     
-                        <label for="Eng_IPA">Nilai Bahasa Inggris Anda</label>
+                        <label class="fw-bold" for="Eng_IPA">Nilai Bahasa Inggris Anda</label>
                         <select class="form-select mb-3" name="Eng_IPA" id="Eng_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -205,7 +204,7 @@
                           <option value="5">Kecil dari 50</option>
                         </select>
             
-                        <label for="Biologi_IPA">Nilai Biologi Anda</label>
+                        <label class="fw-bold" for="Biologi_IPA">Nilai Biologi Anda</label>
                         <select class="form-select mb-3" name="Biologi_IPA" id="Biologi_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -216,7 +215,7 @@
                           <option value="5">Kecil dari 50</option>
                         </select>
             
-                        <label for="Kimia_IPA">Nilai Kimia Anda</label>
+                        <label class="fw-bold" for="Kimia_IPA">Nilai Kimia Anda</label>
                         <select class="form-select mb-3" name="Kimia_IPA" id="Kimia_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -229,7 +228,7 @@
                         </div>
     
                     <div class="col-auto">
-                        <label for="Fisika_IPA">Nilai Fisika Anda</label>
+                        <label class="fw-bold" for="Fisika_IPA">Nilai Fisika Anda</label>
                         <select class="form-select mb-3" name="Fisika_IPA" id="Fisika_IPA" required>
                           <option value="" selected disabled>Nilai dibulatkan saja</option>
                           <option value="1">100</option>
@@ -240,7 +239,7 @@
                           <option value="5">Kecil dari 50</option>
                         </select>
     
-                        <label for="MataPelajaranDisukai_IPA">Mata Pelajaran Anda</label>
+                        <label class="fw-bold" for="MataPelajaranDisukai_IPA">Mata Pelajaran Anda</label>
                         <select class="form-select mb-3" name="MataPelajaranDisukai_IPA" id="MataPelajaranDisukai_IPA" required>
                           <option value="" selected disabled>Pilih salah satu</option>
                           <option value="0">Matematika</option>
@@ -252,7 +251,7 @@
                           <option value="1">Lainnya</option>
                         </select>
     
-                        <label for="Hobi_IPA">Hobi Anda</label>
+                        <label class="fw-bold" for="Hobi_IPA">Hobi Anda</label>
                         <select class="form-select mb-3" name="Hobi_IPA" id="Hobi_IPA" required>
                           <option value="" selected disabled>Pilih salah satu</option>
                           <option value="0">Gaming</option>
@@ -266,7 +265,7 @@
                           <option value="2">Lainnya</option>
                         </select>
     
-                        <label for="Skill_IPA">Skill Anda</label>
+                        <label class="fw-bold" for="Skill_IPA">Skill Anda</label>
                         <select class="form-select mb-3" name="Skill_IPA" id="Skill_IPA" required>
                           <option value="" selected disabled>Pilih salah satu</option>
                           <option value="0">Bahasa Pemograman</option>
@@ -279,7 +278,7 @@
                           <option value="1">Lainnya</option>
                         </select>
     
-                        <label for="Cita2_IPA">Cita - Cita Anda</label>
+                        <label class="fw-bold" for="Cita2_IPA">Cita - Cita Anda</label>
                         <select class="form-select mb-3" name="Cita2_IPA" id="Cita2_IPA" required>
                           <option value="" selected disabled>Pilih salah satu</option>
                           <option value="0">Programmer</option>
@@ -314,8 +313,11 @@
                         <h3 class="text-center">Rekomendasi Jurusan yang sesuai</h2>
                           {% if hasil %}
                           <br>
-                          <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span> <br><br> Berikut Porgram Studinya : <br> <span class="fw_bold">{{detil}}</span></p>
-                          <br>
+                          <p class="text-center">Anda cocok di jurusan berikut :<span class="fw-bold"><br>{{hasil}}</span> <br><br> Program Studi Jurusan : 
+                            <br>{% for prodi in detil %} 
+                            <span class="fw-bold">{{prodi}} <br/> 
+                            {% endfor %}</span></p>
+
                           <p class="text-center">Terima Kasih Sudah Menggunakan Program Kami</p>
                           {% else %}
                           <p style="padding-left: 75px;">Silahkan Gunakan Program Terlebih Dahulu!!</p>
